@@ -57,9 +57,21 @@ To segment countries into meaningful groups reflecting their aid needs, three cl
 
 Clusters were visualized on a world map to provide spatial context and facilitate interpretation of global aid distribution patterns.
 
+<img width="896" height="612" alt="image" src="https://github.com/user-attachments/assets/ea6d3070-f7c6-4d9a-8f35-c99de59cbd62" />
+
 ---
 
-Aid allocation was then performed on the most vulnerable cluster identified by K-Means, based on a weighted scoring system incorporating child mortality, health expenditure, and life expectancy.
+## Aid Allocation Strategy
+
+Focusing on **Cluster 3**, aid distribution was based on a weighted scoring system considering three critical indicators:
+
+- **Child Mortality Rate (child_mort)**
+- **Health Expenditure (% GDP)**
+- **Life Expectancy (life_expec)**
+
+<img width="860" height="751" alt="image" src="https://github.com/user-attachments/assets/5c0f32f7-c421-4a25-9831-aaca62f59f83" />
+
+---
 
 ## How to Use
 1. Load the dataset.
