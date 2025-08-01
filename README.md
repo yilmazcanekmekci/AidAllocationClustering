@@ -84,6 +84,12 @@ Focusing on **Cluster 3**, aid distribution was based on a weighted scoring syst
 - Explore dimensionality reduction techniques more deeply.
 - Improve clustering performance with additional features.
 
+## References
+- [1] Lewkowicz, J. (n.d.). Unsupervised Learning [Lecture slides]. Master’s in data science and business Analytics, University of Warsaw. 
+- [2] Lu, C., Chu, A., Li, Z., Shen, J., Subramanian, S., & Hill, K. (2017). Assessing development assistance for child survival between 2000 and 2014: A multi-sectoral perspective. PLoS ONE, 12(7), e0178887. https://doi.org/10.1371/journal.pone.0178887
+- [3] Kokkula, R. (2022). Unsupervised learning on country data. Kaggle. https://www.kaggle.com/datasets/rohan0301/unsupervised-learning-on-country-data/metadata?resource=download
+
+
 ## Contact
 For questions or contributions, please open an issue or contact [yilmazcanekmekci@gmail.com].
 
