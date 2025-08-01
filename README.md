@@ -25,8 +25,24 @@ The dataset includes 167 countries with the following variables:
 - Aid allocation based on weighted scores of child mortality, health expenditure, and life expectancy in the most needy cluster.
 
 ## Results
-- K-Means with 3 clusters gave the best separation of countries.
-- Aid budget distributed fairly based on normalized weighted scores of key humanitarian indicators.
+
+Clustering algorithms were evaluated using two key metrics:
+
+- **Silhouette Score:** Measures how similar an object is to its own cluster compared to other clusters. Scores range from -1 to 1, where higher is better.
+- **Calinski-Harabasz Index:** Evaluates cluster dispersion; higher values indicate better-defined clusters.
+
+| Algorithm           | Silhouette Score | Calinski-Harabasz Score |
+|---------------------|------------------|-------------------------|
+| K-Means (k=3)       | 0.45             | 66.23                   |
+| Hierarchical (k=3)  | 0.38             | 49.65                   |
+| Gaussian Mixture (k=3) | 0.41          | 56.27                   |
+
+**Interpretation:**  
+K-Means clustering outperformed the other methods in both metrics, producing more distinct and well-separated clusters. This justifies the choice of K-Means for segmenting countries and guiding the aid allocation strategy.
+
+---
+
+Aid allocation was then performed on the most vulnerable cluster identified by K-Means, based on a weighted scoring system incorporating child mortality, health expenditure, and life expectancy.
 
 ## How to Use
 1. Load the dataset.
