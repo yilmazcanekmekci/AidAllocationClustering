@@ -15,21 +15,25 @@ The dataset includes 167 countries with the following variables:
 - Total Fertility Rate
 - GDP per Capita
 
-## Methods
-- Data preprocessing.
-- Clustering techniques applied:
-  - K-Means (best performing)
-  - Hierarchical Clustering
-  - Gaussian Mixture Models (GMM)
-- Clusters visualized on a world map.
-- Aid allocation based on weighted scores of child mortality, health expenditure, and life expectancy in the most needy cluster.
+## Methodology
 
-## Results
+### Clustering Approach
 
-Clustering algorithms were evaluated using two key metrics:
+To segment countries into meaningful groups reflecting their aid needs, three clustering techniques were employed:
 
-- **Silhouette Score:** Measures how similar an object is to its own cluster compared to other clusters. Scores range from -1 to 1, where higher is better.
-- **Calinski-Harabasz Index:** Evaluates cluster dispersion; higher values indicate better-defined clusters.
+1. **K-Means Clustering**
+2. **Hierarchical Clustering (Complete Linkage)**
+3. **Gaussian Mixture Models (GMM)**
+
+### Determination of Optimal Clusters
+
+- **Elbow Method:** Suggested 3 clusters as the optimal balance between explained variance and model complexity.
+- **Silhouette Analysis:** Highest score at k=2, but k=3 was chosen considering elbow method results and cluster interpretability.
+
+### Clustering Evaluation Metrics
+
+- **Silhouette Score:** Measures intra-cluster cohesion and inter-cluster separation; values range from -1 to +1.
+- **Calinski-Harabasz Index:** Evaluates cluster compactness and separation; higher values indicate better-defined clusters.
 
 | Algorithm           | Silhouette Score | Calinski-Harabasz Score |
 |---------------------|------------------|-------------------------|
@@ -37,8 +41,21 @@ Clustering algorithms were evaluated using two key metrics:
 | Hierarchical (k=3)  | 0.38             | 49.65                   |
 | Gaussian Mixture (k=3) | 0.41          | 56.27                   |
 
-**Interpretation:**  
-K-Means clustering outperformed the other methods in both metrics, producing more distinct and well-separated clusters. This justifies the choice of K-Means for segmenting countries and guiding the aid allocation strategy.
+**Insight:** K-Means demonstrated superior performance, yielding well-separated and balanced clusters.
+
+---
+
+## Results
+
+### Cluster Interpretation
+
+- **Cluster 1:** Countries with relatively high income, GDP, and life expectancy, indicating lower immediate need for humanitarian aid.
+- **Cluster 2:** Countries with moderate socioeconomic indicators.
+- **Cluster 3:** Countries with high child mortality, low health expenditure, and low life expectancy—identified as the primary target group for aid allocation.
+
+### Geographic Visualization
+
+Clusters were visualized on a world map to provide spatial context and facilitate interpretation of global aid distribution patterns.
 
 ---
 
