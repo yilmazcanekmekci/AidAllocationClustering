@@ -37,9 +37,9 @@ To segment countries into meaningful groups reflecting their aid needs, three cl
 
 | Algorithm           | Silhouette Score | Calinski-Harabasz Score |
 |---------------------|------------------|-------------------------|
-| K-Means (k=3)       | 0.45             | 66.23                   |
-| Hierarchical (k=3)  | 0.38             | 49.65                   |
-| Gaussian Mixture (k=3) | 0.41          | 56.27                   |
+| K-Means (k=3)       | 0.28             | 66.23                   |
+| Hierarchical (k=3)  | 0.29             | 49.65                   |
+| Gaussian Mixture (k=3) | 0.22          | 56.27                   |
 
 **Insight:** K-Means demonstrated superior performance, yielding well-separated and balanced clusters.
 
