@@ -70,7 +70,7 @@ Focusing on **Cluster 3**, aid distribution was based on a weighted scoring syst
 - **Life Expectancy (life_expec)**
 - **Population**
 
-<img width="878" height="752" alt="image" src="https://github.com/user-attachments/assets/4b80225d-416f-4a6d-9c50-a5b53abde739" />
+<img width="778" height="752" alt="image" src="https://github.com/user-attachments/assets/e6afa77a-f57f-4c71-ac2a-0b64b3ef8ee6" />
 
 ---
 
