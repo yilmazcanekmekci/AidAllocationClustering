@@ -1,7 +1,7 @@
 # AidAllocationClustering
 
 ## Project Overview
-This project applies clustering algorithms to allocate a $30 million humanitarian aid budget optimally to countries based on socioeconomic indicators. The main goal is to identify countries most in need using data such as child mortality, health expenditure, income, and life expectancy.
+This project applies clustering algorithms to allocate a $30 million humanitarian aid budget optimally to countries based on socioeconomic indicators. The main goal is to identify countries most in need using data such as child mortality, health expenditure, income, life expectancy, etc.
 
 ## Dataset
 The dataset includes 167 countries with the following variables:
