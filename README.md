@@ -68,6 +68,7 @@ Focusing on **Cluster 3**, aid distribution was based on a weighted scoring syst
 - **Child Mortality Rate (child_mort)**
 - **Health Expenditure (% GDP)**
 - **Life Expectancy (life_expec)**
+- **Population**
 
 <img width="860" height="751" alt="image" src="https://github.com/user-attachments/assets/5c0f32f7-c421-4a25-9831-aaca62f59f83" />
 
